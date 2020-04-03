@@ -28,7 +28,88 @@
       </div>
     </nav>
   </header>
-
+  <main class="page-form">
+    <h1 class="page-form__header">Подбор программы</h1>
+    <section class="prifile">
+      <h2 class="prifile__header">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+      <form class="prifile__form" method="post" id="data">
+        <div class="prifile__part1">
+        <div class="prifile__field">
+            <label for="name" class="prifile__label">Имя:*</label>
+            <input type="text" id="name" name="name" class="prifile__input" placeholder="Барсик" required>
+        </div>
+        <div class="prifile__field">
+            <label for="weight" class="prifile__label">Вес (кг):*</label>
+            <input type="text" id="weight" name="weight" class="prifile__input" placeholder="7" required>
+        </div>
+        <div class="prifile__field">
+            <label for="age" class="prifile__label">Возраст (лет):</label>
+            <input type="text" id="age" name="age" class="prifile__input" placeholder="7">
+        </div>
+      </div>
+      <div class="prifile__part2">
+        <div class="prifile__field">
+            <label for="loss" class="prifile__label">Похудение</label>
+            <input type="radio" id="loss" name="program-value" class="prifile__input" checked>
+        </div>
+        <div class="prifile__field">
+            <label for="gain" class="prifile__label">Набор массы</label>
+            <input type="radio" id="gain" name="program-value" class="prifile__input">
+        </div>
+        <div class="prifile__field">
+            <label for="unknown" class="prifile__label">Не знаю (Нужен ваш совет)</label>
+            <input type="radio" id="unknown" name="program-value" class="prifile__input">
+        </div>
+      </div>
+      <div class="prifile__part3">
+        <h2 class="prifile__title prifile__title--line1">Контактные данные(владельца кота)</h2>
+        <div class="prifile__field prifile__field--email">
+            <label for="email" class="prifile__label">E-mail:*</label>
+            <input type="text" id="email" name="email" class="prifile__input" placeholder="kuklachev@gmail.com" required>
+        </div>
+        <div class="prifile__field prifile__field--phone">
+            <label for="phone" class="prifile__label">Телефон:*</label>
+            <input type="text" id="phone" name="phone" class="prifile__input" placeholder="8 (960) 900-60-90" required>
+        </div>
+      </div>
+      <div class="prifile__part4">
+        <h2 class="prifile__title prifile__title--line2">Комментарий</h2>
+        <textarea rows="10" cols="38">Расскажите обо всех повадках кота
+        </textarea>
+      </div>
+      <div class="prifile__part5">
+        <h2 class="prifile__title prifile__title--line3">Дополнительно</h2>
+        <div class="prifile__field">
+            <label for="sugar" class="prifile__label">Сахарозаменитель</label>
+            <input type="checkbox" id="sugar" name="sugar" class="prifile__input" checked>
+        </div>
+        <div class="prifile__field">
+            <label for="water" class="prifile__label">Питьевая вода</label>
+            <input type="checkbox" id="water" name="water" class="prifile__input">
+        </div>
+        <div class="prifile__field">
+            <label for="milk" class="prifile__label">Молоко</label>
+            <input type="checkbox" id="milk" name="milk" class="prifile__input">
+        </div>
+        <div class="prifile__field">
+            <label for="vitamins" class="prifile__label">Витамины</label>
+            <input type="checkbox" id="vitamins" name="vitamins" class="prifile__input">
+        </div>
+      </div>
+       <button class="prifile__submit" type="submit" formaction="https://echo.htmlacademy.ru" form="data">Отправить заявку</button>
+        <small class="prifile__required">
+            <sup>*</sup> — Обязательные поля
+        </small>
+      </form>
+    </section>
+    <section class="map">
+      <div class="map__wrapper">
+        <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="400" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
