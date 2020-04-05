@@ -30,74 +30,74 @@
   </header>
   <main class="page-form">
     <h1 class="page-form__header">Подбор программы</h1>
-    <section class="prifile">
-      <h2 class="prifile__header">Заполните анкету и мы подберем программу питания для вашего кота</h2>
-      <form class="prifile__form" method="post" id="data">
-        <div class="prifile__part-data">
-        <div class="prifile__field">
-            <label for="name" class="prifile__label">Имя:*</label>
-            <input type="text" id="name" name="name" class="prifile__input" placeholder="Барсик" required>
+    <section class="profile">
+      <h2 class="profile__header">Заполните анкету и мы подберем программу питания для вашего кота</h2>
+      <form class="profile__form" method="post" id="data" action="https://echo.htmlacademy.ru">
+        <div class="profile__part-data">
+        <div class="profile__field">
+            <label for="name" class="profile__label">Имя:*</label>
+            <input type="text" id="name" name="name" class="profile__input" placeholder="Барсик" required>
         </div>
-        <div class="prifile__field">
-            <label for="weight" class="prifile__label">Вес (кг):*</label>
-            <input type="text" id="weight" name="weight" class="prifile__input" placeholder="7" required>
+        <div class="profile__field">
+            <label for="weight" class="profile__label">Вес (кг):*</label>
+            <input type="text" id="weight" name="weight" class="profile__input" placeholder="7" required>
         </div>
-        <div class="prifile__field">
-            <label for="age" class="prifile__label">Возраст (лет):</label>
-            <input type="text" id="age" name="age" class="prifile__input" placeholder="7">
-        </div>
-      </div>
-      <div class="prifile__part-program">
-        <div class="prifile__field">
-            <label for="loss" class="prifile__label">Похудение</label>
-            <input type="radio" id="loss" name="program-value" class="prifile__input" checked>
-        </div>
-        <div class="prifile__field">
-            <label for="gain" class="prifile__label">Набор массы</label>
-            <input type="radio" id="gain" name="program-value" class="prifile__input">
-        </div>
-        <div class="prifile__field">
-            <label for="unknown" class="prifile__label">Не знаю (Нужен ваш совет)</label>
-            <input type="radio" id="unknown" name="program-value" class="prifile__input">
+        <div class="profile__field">
+            <label for="age" class="profile__label">Возраст (лет):</label>
+            <input type="text" id="age" name="age" class="profile__input" placeholder="7">
         </div>
       </div>
-      <div class="prifile__part-contacts">
-        <h2 class="prifile__title prifile__title--line1">Контактные данные(владельца кота)</h2>
-        <div class="prifile__field prifile__field--email">
-            <label for="email" class="prifile__label">E-mail:*</label>
-            <input type="text" id="email" name="email" class="prifile__input" placeholder="kuklachev@gmail.com" required>
+      <div class="profile__part-program">
+        <div class="profile__field">
+            <label for="loss" class="profile__label">Похудение</label>
+            <input type="radio" id="loss" name="program-value" class="profile__input" checked>
         </div>
-        <div class="prifile__field prifile__field--phone">
-            <label for="phone" class="prifile__label">Телефон:*</label>
-            <input type="text" id="phone" name="phone" class="prifile__input" placeholder="8 (960) 900-60-90" required>
+        <div class="profile__field">
+            <label for="gain" class="profile__label">Набор массы</label>
+            <input type="radio" id="gain" name="program-value" class="profile__input">
+        </div>
+        <div class="profile__field">
+            <label for="unknown" class="profile__label">Не знаю (Нужен ваш совет)</label>
+            <input type="radio" id="unknown" name="program-value" class="profile__input">
         </div>
       </div>
-      <div class="prifile__part-comments">
-        <h2 class="prifile__title prifile__title--line2">Комментарий</h2>
+      <div class="profile__part-contacts">
+        <h2 class="profile__title profile__title--line-contacts">Контактные данные(владельца кота)</h2>
+        <div class="profile__field profile__field--email">
+            <label for="email" class="profile__label">E-mail:*</label>
+            <input type="text" id="email" name="email" class="profile__input" placeholder="kuklachev@gmail.com" required>
+        </div>
+        <div class="profile__field profile__field--phone">
+            <label for="phone" class="profile__label">Телефон:*</label>
+            <input type="text" id="phone" name="phone" class="profile__input" placeholder="8 (960) 900-60-90" required>
+        </div>
+      </div>
+      <div class="profile__part-comments">
+        <h2 class="profile__title profile__title--line-comments">Комментарий</h2>
         <textarea rows="10" cols="38">Расскажите обо всех повадках кота
         </textarea>
       </div>
-      <div class="prifile__part-additions">
-        <h2 class="prifile__title prifile__title--line3">Дополнительно</h2>
-        <div class="prifile__field">
-            <label for="sugar" class="prifile__label">Сахарозаменитель</label>
-            <input type="checkbox" id="sugar" name="sugar" class="prifile__input" checked>
+      <div class="profile__part-additions">
+        <h2 class="profile__title profile__title--line-additions">Дополнительно</h2>
+        <div class="profile__field">
+            <label for="sugar" class="profile__label">Сахарозаменитель</label>
+            <input type="checkbox" id="sugar" name="sugar" class="profile__input" checked>
         </div>
-        <div class="prifile__field">
-            <label for="water" class="prifile__label">Питьевая вода</label>
-            <input type="checkbox" id="water" name="water" class="prifile__input">
+        <div class="profile__field">
+            <label for="water" class="profile__label">Питьевая вода</label>
+            <input type="checkbox" id="water" name="water" class="profile__input">
         </div>
-        <div class="prifile__field">
-            <label for="milk" class="prifile__label">Молоко</label>
-            <input type="checkbox" id="milk" name="milk" class="prifile__input">
+        <div class="profile__field">
+            <label for="milk" class="profile__label">Молоко</label>
+            <input type="checkbox" id="milk" name="milk" class="profile__input">
         </div>
-        <div class="prifile__field">
-            <label for="vitamins" class="prifile__label">Витамины</label>
-            <input type="checkbox" id="vitamins" name="vitamins" class="prifile__input">
+        <div class="profile__field">
+            <label for="vitamins" class="profile__label">Витамины</label>
+            <input type="checkbox" id="vitamins" name="vitamins" class="profile__input">
         </div>
       </div>
-       <button class="prifile__submit" type="submit" formaction="https://echo.htmlacademy.ru" form="data">Отправить заявку</button>
-        <small class="prifile__required">
+       <button class="profile__submit" type="submit"  form="data">Отправить заявку</button>
+        <small class="profile__required">
             <sup>*</sup> — Обязательные поля
         </small>
       </form>
