@@ -1,0 +1,26 @@
+@white: #ffffff;
+@black: #111111;
+@greyish-brown: #444444;
+@white-two: #f2f2f2;
+@grey: #ededed;
+@leaf: #68b738;
+@brownish-grey: #666666;
+.font-style(@size; @line-height; @text-align; @color){
+  font-size: @size;
+  line-height: @line-height;
+  text-align: @text-align;
+  color: @color;
+}
+.absolute-style(@content; @position; @width; @height; @top; @left){
+  content: @content;
+  position: @position;
+  width: @width;
+  height: @height;
+  top: @top;
+  left: @left;
+}
+@background-style(@image; @repeat; @size){
+  background-image: @image;
+  background-repeat: @repeat;
+  background-size: @size;
+}

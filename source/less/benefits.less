@@ -6,11 +6,8 @@
   display: block;
   width: 225px;
   min-height: 38px;
-  font-size: 36px;
-  line-height: 60px;
-  text-align: left;
-  color: #111111;
   font-weight: 400;
+  .font-style(36px; 60px; left; @black);
 }
 .benefits__list{
   list-style: none;
@@ -25,74 +22,31 @@
 }
 .benefits__description{
   font-family: "Arial", "PT Sans", sans-serif;
-  color: #444444;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: left;
   width: 194px;
   min-height: 48px;
+  .font-style(14px; 18px; left; @greyish-brown);
 }
 .benefits__item--image-leaf::before{
-  content: url(../img/green-back.png);
-  position: absolute;
-  top: -2px;
-  left: 0;
-  width: 60px;
-  height: 60px;
+  .absolute-style(url(/img/green-back.png); absolute; 60px; 60px; -2px; 0);
 }
 .benefits__item--image-leaf::after{
-  content: url(../img/advantage-leaf.png);
-  position: absolute;
-  top: 3px;
-  left: 5px;
-  width: 26px;
-  height: 29px;
+  .absolute-style(url(/img/advantage-leaf.png); absolute; 26px; 29px; 3px; 5px);
 }
 .benefits__item--image-powder::before{
-  content: url(../img/green-back.png);
-  position: absolute;
-  top: 78px;
-  left: 0;
-  width: 60px;
-  height: 60px;
+  .absolute-style(url(/img/green-back.png); absolute; 60px; 60px; 78px; 0);
 }
 .benefits__item--image-powder::after{
-  content: url(../img/advantage-powder.png);
-  position: absolute;
-  top: 82px;
-  left: 5px;
-  width: 29px;
-  height: 31px;
+  .absolute-style(url(/img/advantage-powder.png); absolute; 29px; 31px; 82px; 5px);
 }
 .benefits__item--image-fork::before{
-  content: url(../img/green-back.png);
-  position: absolute;
-  top: 158px;
-  left: 0;
-  width: 60px;
-  height: 60px;
+  .absolute-style(url(/img/green-back.png); absolute; 60px; 60px; 158px; 0);
 }
 .benefits__item--image-fork::after{
-  content: url(../img/advantage-dining.png);
-  position: absolute;
-  top: 163px;
-  left: 4px;
-  width: 23px;
-  height: 30px;
+  .absolute-style(url(/img/advantage-dining.png); absolute; 23px; 30px; 163px; 4px);
 }
 .benefits__item--image-scale::before{
-  content: url(../img/green-back.png);
-  position: absolute;
-  top: 238px;
-  left: 0;
-  width: 60px;
-  height: 60px;
+  .absolute-style(url(/img/green-back.png); absolute; 60px; 60px; 238px; 0);
 }
 .benefits__item--image-scale::after{
-  content: url(../img/advantage-clock.png);
-  position: absolute;
-  top: 243px;
-  left: 5px;
-  width: 26px;
-  height: 31px;
+  .absolute-style(url(/img/advantage-clock.png); absolute; 26px; 31px; 243px; 5px);
 }
