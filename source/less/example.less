@@ -9,7 +9,6 @@
   width: 195px;
   min-height: 37px;
   .font-style(36px; 60px; left; @black);
-  font-weight: 400;
   margin-left: 20px;
   padding-top: 16px;
 }
@@ -31,7 +30,7 @@
   margin-left: 20px;
   margin-top: 11px;
   text-align: center;
-  @background-style(url("/img/weight-back.png"); no-repeat; 124px 56px);
+  @background-style(url("./img/weight-back.png"); no-repeat; 124px 56px);
 }
 .example__value{
   font-size: 24px;
@@ -50,7 +49,7 @@
   .font-style(12px; 12px; center; @greyish-brown);
   text-transform: lowercase;
   margin-left: 20px;
-  @background-style(url("/img/grey-back.png"); no-repeat; 87px 21px);
+  @background-style(url("./img/grey-back.png"); no-repeat; 87px 21px);
 }
 .example__list-days{
   margin-left: 32px;
@@ -59,8 +58,7 @@
   margin-left: 21px;
 }
 .example__spending{
-  .font-style(14px; 20px; center; @black)
-  font-weight: 400;
+  .font-style(14px; 20px; center; @black);
   text-transform: uppercase;
   margin-top: 5px;
 }
@@ -78,18 +76,17 @@
 .example__button{
   width: 45px;
   min-height: 15px;
-  font-family: inherit;
   .font-style(16px; 20px; left; @black);
   text-transform: uppercase;
   border: none;
   position: relative;
 }
 .example__button--before::before{
-  .absolute-style(url(/img/before-after-scale.png); absolute; 84px; 14px; 0; 0);
+  .absolute-style(url(./img/before-after-scale.png); absolute; 84px; 14px; 0; 0);
   margin-left: 56px;
 }
 .example__button--before::after{
-  .absolute-style(url(/img/before-after-scale-copy.png); absolute; 35px; 6px; -4px; 0);
+  .absolute-style(url(./img/before-after-scale-copy.png); absolute; 35px; 6px; -4px; 0);
   margin-left: 62px;
 }
 .example__button--after{
