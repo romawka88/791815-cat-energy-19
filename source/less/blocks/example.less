@@ -1,0 +1,101 @@
+.example__wrapper{
+  background-color: @white-two;
+  width: 320px;
+  min-height: 705px;
+  margin-top: 46px;
+}
+.example__title{
+  display: block;
+  width: 195px;
+  min-height: 37px;
+  .font-style(36px; 60px; left; @black);
+  font-weight: 400;
+  margin-left: 20px;
+  padding-top: 16px;
+}
+.example__content{
+  display: block;
+  width: 266px;
+  min-height: 103px;
+  font-family: @arial-font;
+  .font-style(14px; 18px; left; @greyish-brown);
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.example__numbers{
+  display: flex;
+}
+.example__list{
+  display: block;
+  width: 124px;
+  margin-left: 20px;
+  margin-top: 11px;
+  text-align: center;
+  background-image: url("../img/weight-back.png");
+  background-repeat: no-repeat;
+  background-size: 124px 56px;
+}
+.example__value{
+  font-size: 24px;
+  line-height: 24px;
+  color: @black;
+  margin-top: 14px;
+  margin-left: 0px;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.example__text{
+  display: block;
+  width: 82px;
+  min-height: 22px;
+  font-family: @arial-font;
+  .font-style(12px; 12px; center; @greyish-brown);
+  text-transform: lowercase;
+  margin-left: 20px;
+  background-image: url("../img/grey-back.png");
+  background-repeat: no-repeat;
+  background-size: 87px 21px;
+}
+.example__list--days{
+  margin-left: 32px;
+}
+.example__text-days{
+  margin-left: 21px;
+}
+.example__spending{
+  .font-style(14px; 20px; center; @black);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.example__cat-image{
+  margin-top: 22px;
+  width: 320px;
+  height: 240px;
+}
+.example__button-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 57px;
+  margin-top: 29px;
+}
+.example__button{
+  width: 45px;
+  min-height: 15px;
+  .font-style(16px; 20px; left; @black);
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+}
+.example__button--before::before{
+  .absolute-style(url(../img/before-after-scale.png); absolute; 84px; 14px; 0; 0);
+  margin-left: 56px;
+}
+.example__button--before::after{
+  .absolute-style(url(../img/before-after-scale-copy.png); absolute; 35px; 6px; -4px; 0);
+  margin-left: 62px;
+}
+.example__button--after{
+text-align: right;
+margin-right: 60px;
+}
