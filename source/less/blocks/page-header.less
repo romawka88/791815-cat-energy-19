@@ -1,12 +1,14 @@
+.page-header{
+  width: 320px;
+}
 .page-header__logo{
   width: 191px;
   padding-top: 11px;
 }
 .page-header__wrapper{
   display: flex;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 19px;
+  width: 280px;
+  margin: 0 auto;
 }
 .page-header__toggle{
   width: 25px;
@@ -22,19 +24,22 @@
   }
   .page-header__wrapper {
     width: 174px;
-    padding-left: 29px;
+    margin: 0 auto;
     padding-top: 24px;
   }
 }
 @media (min-width: @desktop-width){
   .page-header{
    display: flex;
-   justify-content: space-between;
    min-width: @desktop-width;
   }
   .page-header__wrapper {
-    width: 203px;
+    width: 719px;
+    margin: 0 auto;
     padding-left: 109px;
     padding-top: 53px;
+  }
+  .page-header__logo{
+    width: 203px;
   }
 }
