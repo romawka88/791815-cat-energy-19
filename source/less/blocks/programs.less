@@ -62,19 +62,23 @@
 }
 @media (min-width: @tablet-width){
   .programs__wrapper{
-    width: @tablet-width;
+    width: 708px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .programs__list{
+    padding-left: 20px;
   }
   .programs__item{
     width: 708px;
   }
   .programs__title{
+    display: block;
+    width: 206px;
     .font-style(36px; 37px; left; @black);
-    padding-top: 79px;
-    margin-left: 54px;
-
+    padding-top: 78px;
+    margin-left: 53px;
   }
   .programs__item--slim{
   background-image: url("../img/icon-cat-slim.svg"),
@@ -94,38 +98,44 @@
   .font-style(16px; 24px; left; @greyish-brown);
   width: 372px;
   padding-left: 32px;
-  margin-top: -20px;
+  margin-top: -16px;
 }
 .programs__link{
   width: 170px;
   .font-style(20px; 20px; left; @black);
-  padding-top: 19px;
+  padding-top: 17px;
   padding-left: 33px;
   padding-bottom: 62px;
 }
 .programs__link--arrow{
-  background-position: 165px 23px;
+  background-position: 165px 21px;
 }
 .programs__item--pro{
   margin-top: -9px;
 }
 .programs__description--width{
   width: 340px;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 .programs__link--arrow-pro{
   background-position: 158px 23px;
 }
 }
 @media (min-width: @desktop-width){
+  .programs{
+    width: @desktop-width;
+  }
   .programs__wrapper{
-    width: 1300px;
+    width: 1220px;
     margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
   }
   .programs__list{
+    width: 1220px;
     display: flex;
+    margin-top: 13px;
+    padding-left: 41px;
   }
   .programs__item{
     width: 570px;
@@ -164,5 +174,8 @@
 }
 .programs__link--arrow-pro{
   background-position: 158px 13px;
+}
+.programs__description{
+  margin-top: -18px;
 }
 }
