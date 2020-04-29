@@ -1,15 +1,29 @@
 .copyright{
   display: flex;
   justify-content: space-between;
-  margin-left: 19px;
-  margin-top: 30px;
+  padding-right: 20px;
 }
 .copyright__academy{
   display: block;
   font-family: @arial-font;
   .font-style(16px; 16px; left; @greyish-brown);
+  padding-left: 19px;
+  padding-top: 29px;
 }
 .copyright__image{
-  margin-top: -8px;
-  margin-right: 20px;
+  padding-top: 20px;
+}
+@media (min-width: @tablet-width){
+  .copyright{
+    padding-right: 0px;
+    padding-top: 37px;
+  }
+  .copyright__academy{
+    padding-right: 23px;
+  }
+}
+@media (min-width: @desktop-width){
+  .copyright{
+    padding-top: 40px;
+  }
 }
