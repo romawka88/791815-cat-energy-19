@@ -3,6 +3,11 @@
   width: 318px;
   border: 1px solid @grey;
 }
+.button-to-all__wrapper{
+  width: 282px;
+  padding-left: 19px;
+  padding-right: 19px;
+}
 .button-to-all__plus{
   position: absolute;
   width: 30px;
@@ -11,7 +16,7 @@
 .button-to-all__plus::before,
 .button-to-all__plus::after{
   content: '';
-  left: 144px;
+  left: 125px;
   top: 40px;
   width: 30px;
   height: 2px;
@@ -23,11 +28,13 @@
 }
 .button-to-all__title{
   display: block;
-  width: 214px;
+  width: 204px;
   font-weight: 400;
   .font-style(16px; 20px; center; @black);
-  margin-left: 53px;
-  margin-top: 79px;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 80px;
+  margin: 0 auto;
   text-transform: uppercase;
 }
 .button-to-all__text{
@@ -35,22 +42,25 @@
   width: 221px;
   font-family: @arial-font;
   .font-style(12px; 16px; center; @greyish-brown);
-  padding-left: 48px;
-  margin-top: -5px;
+  padding-left: 28px;
+  padding-right: 31px;
+  padding-top: 7px;
+  margin: 0 auto;
 }
 .button-to-all__button{
   display: block;
-  width: 278px;
+  width: 91px;
   background-color: @white-two;
   .font-style(16px; 20px; center; @greyish-brown);
   font-weight: 400px;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 11px;
+  padding-left: 95px;
+  padding-right: 94px;
+  margin: 0 auto;
   margin-top: 21px;
-  margin-left: 19px;
   margin-bottom: 24px;
-  padding-left: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 @media (min-width: @tablet-width){
   .button-to-all{
@@ -58,6 +68,13 @@
     float: right;
     margin-top: -433px;
     margin-right: 30px;
+    padding-bottom: 39px;
+  }
+  .button-to-all__wrapper{
+    width: 249px;
+    margin: 0 auto;
+    padding-left: 38px;
+    padding-right: 37px;
   }
   .button-to-all__plus{
     width: 61px;
@@ -65,29 +82,33 @@
 }
   .button-to-all__plus::before,
   .button-to-all__plus::after{
-    left: 131px;
+    left: 94px;
     top: 83px;
     width: 61px;
     height: 2px;
   }
   .button-to-all__title{
     width: 134px;
+    margin: 0 auto;
     .font-style(20px; 20px; center; @black);
-    padding-top: 84px;
-    padding-left: 42px;
+    padding-top: 163px;
+    padding-left: 57px;
+    padding-right: 58px;
   }
   .button-to-all__text{
     width: 167px;
     .font-style(16px; 20px; center; @black);
-    padding-top: 13px;
-    padding-left: 77px;
+    padding-top: 24px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 42px;
   }
   .button-to-all__button{
     width: 91px;
+    margin: 0 auto;
     margin-top: 83px;
-    margin-left: 37px;
-    padding-left: 80px;
-    padding-right: 78px;
+    padding-left: 79px;
+    padding-right: 79px;
   }
 }
 @media (min-width: @desktop-width){

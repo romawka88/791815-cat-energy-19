@@ -1,6 +1,11 @@
+.site-list{
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 0px;
+  margin-left: -20px;
+}
 .site-list__item a{
   display: block;
-  width: 320px;
   font-family: @font-family;
   .font-style(20px; 20px; center; @black);
   text-transform: uppercase;
@@ -8,26 +13,28 @@
   font-weight: 500;
   padding-top: 22px;
   padding-bottom: 23px;
-  margin-left: -61px;
   border-top: 1px solid @grey;
 }
 @media (min-width: @tablet-width){
   .site-list{
+    width: 516px;
     display: flex;
+    margin: 0;
   }
   .site-list__item a{
   .font-style(18px; 25px; left; @black-two);
   font-weight: 400;
   border-top: none;
-  padding-top: 28px;
+  padding-top: 42px;
   }
   .site-list li:first-child{
     width: 62px;
+    padding-left: 76px;
     padding-right: 36px;
   }
   .site-list li:nth-child(2){
-    width: 151px;
-    padding-right: 38px;
+    width: 154px;
+    padding-right: 35px;
   }
   .site-list__item--active{
   text-decoration: underline solid @leaf;
@@ -35,23 +42,23 @@
 }
 @media (min-width: @desktop-width){
   .site-list{
-  width: 478px;
+  width: 611px;
   display: flex;
-  padding-right: 20px;
   }
   .site-list__item a{
   .font-style(20px; 25px; left; @black);
   font-weight: 400;
   border-top: none;
-  padding-top: 59px;
+  padding-top: 74px;
   position: relative;
   }
   .site-list li:first-child{
-  width: 70px;
-  margin-left: -34px;
+  width: 69px;
+  padding-left: 132px;
+  padding-right: 36px;
   }
   .site-list li:nth-child(2){
-  width: 168px;
-  padding-right: 35px;
+  width: 171px;
+  padding-right: 32px;
   }
 }

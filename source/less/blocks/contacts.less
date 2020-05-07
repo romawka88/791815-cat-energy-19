@@ -1,27 +1,45 @@
 .contacts{
   display: block;
   width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   border-bottom: 1px solid @grey;
 }
 .contacts__logo{
   display: block;
-  margin-bottom: 28px;
-  margin-left: 76px;
+  width: 128px;
+  margin: 0 auto;
+  padding-left: 76px;
+  padding-right: 76px;
   padding-top: 39px;
-  margin-top: -3px;
+  padding-bottom: 29px;
 }
 @media (min-width: @tablet-width){
   .contacts{
     width: 192px;
-    padding-left: 0;
     margin: 0;
+    padding: 0;
   }
   .contacts__logo{
+    width: 128px;
     padding-top: 64px;
+    padding-left: 1px;
     padding-bottom:62px;
-    padding-right: 0;
+    padding-right: 63px;
+    margin: 0;
+  }
+}
+@media (min-width: @desktop-width){
+  .contacts{
+    width: 325px;
+    margin: 0;
+    padding: 0;
+  }
+  .contacts__logo{
+    width: 128px;
+    padding-top: 63px;
+    padding-left: 0px;
+    padding-bottom:62px;
+    padding-right: 197px;
     margin: 0;
   }
 }
