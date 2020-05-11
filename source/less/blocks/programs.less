@@ -1,9 +1,17 @@
+.programs{
+  width: 320px;
+  margin: 0 auto;
+}
+.programs__wrapper,
+.programs__list{
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .programs__item{
   display: block;
   width: 280px;
-  min-height: 266px;
   margin-left: -20px;
-  margin-top: -2px;
   background-color: @white-two;
   list-style: none;
 }
@@ -11,29 +19,30 @@
   .font-style(24px; 37px; left; @black);
   text-transform: uppercase;
   font-weight: 400;
-  padding-top: 29px;
-  margin-left: 91px;
+  padding-top: 30px;
+  margin: 0 auto;
+  padding-left: 91px;
+  margin-top: 22px;
 }
 .programs__item--slim{
   background-image: url("../img/icon-cat-slim.svg"),
     url("../img/ellipse.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 35px 49px, 50px 51px;
-  background-position: 30px 21px, 22px 23px;
+  background-position: 30px 22px, 22px 24px;
 }
 .programs__item--pro{
   background-image: url("../img/icon-cat-pro.svg"),
     url("../img/ellipse.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 67px 28px, 50px 51px;
-  background-position: 13px 34px, 22px 23px;
+  background-position: 13px 35px, 22px 23px;
 }
 .programs__description{
   display: block;
   width: 240px;
-  min-height: 86px;
-  margin-left: 20px;
-  padding-top: 6px;
+  margin: 0 auto;
+  padding-top: 29px;
   font-family: @arial-font;
   color: @greyish-brown;
   padding-bottom: 22px;
@@ -45,18 +54,166 @@
   .font-style(16px; 16px; left; @black);
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 19px;
-  padding-top: 5px;
+  padding-left: 19px;
+  padding-right: 138px;
+  margin: 0 auto;
 }
 .programs__link--arrow{
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position: 98px 7px;
+  background-position: 117px 21px;
+  padding-top: 19px;
+  padding-bottom: 22px;
 }
 .programs__item--pro{
-  margin-top: -4px;
+  margin-top: -2px;
 }
 .programs__link--arrow-pro{
-  background-position: 96px 7px;
+  background-position: 115px 21px;
+}
+@media (min-width: @tablet-width){
+.programs{
+  min-width: @tablet-width;
+}
+.programs__wrapper{
+  width: 708px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.programs__list{
+  width: 708px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.programs__item{
+  display: block;
+  width: 708px;
+  margin-left: -30px;
+  padding-bottom: 40px;
+}
+.programs__title{
+  display: block;
+  width: 206px;
+  .font-style(36px; 37px; left; @black);
+  margin: 0 auto;
+  padding-left: 53px;
+  padding-right: 449px;
+  padding-top: 76px;
+  margin-top: 22px;
+}
+.programs__item--slim{
+  background-image: url("../img/icon-cat-slim.svg"),
+    url("../img/ellipse-tablet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 141px 194px, 200px 200px;
+  background-position: 475px 80px, 446px 92px;
+}
+.programs__item--pro{
+  background-image: url("../img/icon-cat-pro.svg"),
+    url("../img/ellipse-tablet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 268px 113px, 200px 200px;
+  background-position: 412px 134px, 448px 91px;
+}
+.programs__description{
+  .font-style(16px; 24px; left; @greyish-brown);
+  width: 372px;
+  margin: 0 auto;
+  padding-left: 52px;
+  padding-right: 284px;
+  padding-top: 25px;
+  border: none;
+}
+.programs__link{
+  width: 170px;
+  .font-style(20px; 20px; left; @black);
+  margin: 0 auto;
+  padding-left: 52px;
+  padding-right: 486px;
+  padding-top: 34px;
+}
+.programs__link--arrow{
+  background-position: 184px 38px;
+}
+.programs__item--pro{
+  margin-top: 30px;
+}
+.programs__description--width{
+  width: 340px;
+  padding-left: 52px;
+  padding-right: 316px;
+  padding-top: 25px;
+}
+.programs__link--arrow-pro{
+  background-position: 178px 38px;
+}
+}
+@media (min-width: @desktop-width){
+  .programs{
+    width: @desktop-width;
+  }
+  .programs__wrapper{
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .programs__list{
+    width: 1220px;
+    display: flex;
+    margin-top: 206px;
+  }
+  .programs__item{
+    width: 570px;
+    padding-bottom: 40px;
+  }
+  .programs__item--slim{
+  background-image: url("../img/icon-cat-slim.svg"),
+    url("../img/ellipse-tablet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 71px 97px, 100px 100px;
+  background-position: 66px 41px, 52px 47px;
+}
+.programs__item--pro{
+  background-image: url("../img/icon-cat-pro.svg"),
+    url("../img/ellipse-tablet.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 134px 57px, 100px 100px;
+  background-position: 34px 69px, 52px 47px;
+  margin-left: 80px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.programs__title{
+  display: block;
+  width: 206px;
+  margin: 0 auto;
+  padding-left: 214px;
+  padding-right: 150px;
+  padding-top: 54px;
+  margin-top: 22px;
+}
+.programs__description{
+  width: 462px;
+  border-bottom: none;
+  margin-bottom:0;
+  padding-top: 92px;
+  padding-right: 56px;
+}
+.programs__link{
+  padding-top: 9px;
+  padding-right: 348px;
+}
+.programs__link--arrow{
+  background-position: 184px 12px;
+}
+.programs__link--arrow-pro{
+  background-position: 178px 13px;
+}
+.programs__description{
+  margin-top: -18px;
+}
 }

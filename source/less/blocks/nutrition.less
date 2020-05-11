@@ -1,39 +1,129 @@
+.nutrition{
+  width: 320px;
+  margin: 0 auto;
+}
+.nutrition__wrapper{
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .nutrition__header{
   display: block;
   width: 249px;
-  min-height: 74px;
   .font-style(36px; 36px; center; @white);
   font-weight: 400;
-  margin-left: 36px;
+  margin: 0 auto;
   padding-top: 27px;
 }
 .nutrition__slogan{
   display: block;
   width: 198px;
-  min-height: 16px;
   .font-style(14px; 14px; center; @white);
   font-weight: 400;
   text-transform: uppercase;
-  margin-left: 60px;
-  margin-top: -6px;
+  margin: 0 auto;
+  padding-left: 22px;
+  padding-right: 25px;
+  padding-top: 25px;
 }
 .nutrition__program-button{
   display: block;
-  width: 280px;
-  min-height: 29px;
+  width: 208px;
   color: @white;
   background-color: #68b738;
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 20px;
-  margin-top: 4px;
   padding-top: 11px;
+  margin: 0 auto;
+  padding-bottom: 11px;
+  padding-left: 72px;
+  margin-top: 3px;
 }
 .nutrition__can-image{
   display: block;
   width: 280px;
-  height: 270px;
-  margin-top: 26px;
-  margin-left: 20px;
+  margin: 0 auto;
+  padding-top: 28px;
+}
+@media (min-width: @tablet-width){
+.nutrition{
+  min-width: @tablet-width;
+}
+.nutrition__wrapper{
+  width: 709px;
+  margin: 0 auto;
+  padding-left: 29px;
+  padding-right: 31px;
+}
+  .nutrition__header{
+  width: 414px;
+  .font-style(60px; 60px; left; @black);
+  padding-top: 49px;
+  margin: 0 auto;
+  padding-left: 88px;
+  padding-right: 207px;
+  }
+  .nutrition__slogan{
+  width: 283px;
+  .font-style(20px; 20px; left; @black);
+  margin: 0 auto;
+  padding-left: 89px;
+  padding-top: 42px;
+  padding-right: 337px;
+  }
+  .nutrition__can-image{
+  width: 709px;
+  margin: 0 auto;
+  padding-top: 20px;
+  }
+  .nutrition__program-button{
+   width: 191px;
+   .font-style(20px; 20px; left; @white);
+   margin: 0 auto;
+   padding-top: 17px;
+   padding-bottom: 15px;
+   padding-left: 26px;
+   padding-right: 29px;
+  }
+}
+@media (min-width: @desktop-width){
+  .nutrition{
+    min-width: @desktop-width;
+  }
+  .nutrition__wrapper{
+  width: 1220px;
+  margin: 0 auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  display: flex;
+  }
+  .nutrition__main-header{
+  width: 570px;
+  }
+  .nutrition__header{
+    width: 414px;
+    margin-left: 0;
+    padding-right: 76px;
+    padding-left: 80px;
+    padding-top: 222px;
+  }
+  .nutrition__can-image{
+    width: 552px;
+    padding-top: 142px;
+    margin: 0 auto;
+  }
+  .nutrition__slogan{
+    width: 283px;
+    padding-left: 80px;
+    padding-right: 207px;
+  }
+  .nutrition__program-button{
+   width: 190px;
+   .font-style(20px; 20px; left; @white);
+   margin: 0 auto;
+   padding-top: 17px;
+   padding-bottom: 15px;
+   padding-left: 26px;
+   padding-right: 29px;
+  }
 }

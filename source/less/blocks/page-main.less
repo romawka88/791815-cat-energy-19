@@ -1,9 +1,26 @@
 .page-main{
+  min-width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
   background-color: @white;
-  margin-top: -27px;
-  top: 0;
-  left: 0;
+  margin: 0 auto;
+}
+@media (min-width: @tablet-width){
+  .page-main{
+    min-width: @tablet-width;
+    background-color: @white;
+    background-image: none;
+  }
+}
+@media (min-width: @desktop-width){
+  .page-main{
+    min-width: @desktop-width;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px 696px;
+    background-color: @white;
+    background-position: 719px 0px;
+    margin-top: -122px;
+  }
 }
