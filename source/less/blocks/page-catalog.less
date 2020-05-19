@@ -1,5 +1,5 @@
 .page-catalog{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 .page-catalog__header{
@@ -11,6 +11,7 @@
   padding-right: 46px;
   padding-bottom: 28px;
   padding-top: 15px;
+  margin: 0;
   white-space : nowrap;
 }
 @media (min-width: @tablet-width){
@@ -30,8 +31,12 @@
     min-width: @desktop-width;
   }
   .page-catalog__header{
-    padding-left: 110px;
+    padding-left: 40px;
     padding-top: 66px;
-    padding-right: 907px;
+    padding-right: 837px;
+    margin: 0 auto;
+  }
+  .page-catalog__desktop-width{
+    display: flex;
   }
 }

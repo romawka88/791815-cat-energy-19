@@ -1,5 +1,5 @@
 .page-form{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 .page-form__header{
@@ -7,5 +7,32 @@
   width: 259px;
   font-weight: 400;
   .font-style(36px; 60px; left; @black);
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 41px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+@media (min-width: @tablet-width){
+.page-form{
+  min-width: @tablet-width;
+  margin: 0 auto;
+}
+.page-form__header{
+  width: 432px;
+  .font-style(60px; 60px; left; @black);
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 306px;
+  padding-top: 49px;
+  padding-bottom: 35px;
+}
+}
+@media (min-width: @desktop-width){
+.page-form{
+  min-width: @desktop-width;
+}
+.page-form__header{
+  padding: 66px 787px 53px 111px;
+}
 }

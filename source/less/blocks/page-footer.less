@@ -1,25 +1,31 @@
 .page-footer{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+  background-color: @white-two;
+  background-size: cover;
 }
 .page-footer__wrapper{
-  width: 280px;
+  min-width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: @white-two;
+  margin-top: -3px;
 }
 @media (min-width: @tablet-width){
   .page-footer{
     min-width: @tablet-width;
-    background-color: @white-two;
   }
   .page-footer__wrapper{
-    width: 708px;
+    min-width: 708px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     justify-content: space-between;
+  }
+  .page-footer__catalog-wrapper .page-footer__contacts,
+  .page-footer__catalog-wrapper .page-footer__social,
+  .page-footer__catalog-wrapper .page-footer__copyright{
+    margin-top: -5px;
   }
 }
 @media (min-width: @desktop-width){
@@ -27,9 +33,9 @@
     min-width: @desktop-width;
   }
   .page-footer__wrapper{
-    width: 1220px;
+    min-width: 1220px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
