@@ -65,6 +65,9 @@
   height: 30px;
   border: none;
   background-image: url(../img/Layer2.png);
+   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+     background-image: url(../img/Layer2@2x.webp);
+   }
 }
 .profile__program-input:disabled+.profile__radio-button{
   border-color: @white-two;
@@ -74,6 +77,9 @@
   height: 30px;
   background-image: url(../img/Layer2.png);
   opacity: 0.4;
+   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+     background-image: url(../img/Layer2@2x.webp);
+   }
 }
 .profile__program-label{
   display: block;
@@ -198,7 +204,7 @@
 .profile__additions-input:checked+.profile__checkbox{
   width: 28px;
   height: 28px;
-  background-image: url(../img/tick-svg.png);
+  background-image: url(../img/icon-tick.svg);
   background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -210,7 +216,7 @@
 .profile__additions-input:checked:disabled+.profile__checkbox{
   width: 28px;
   height: 28px;
-  background-image: url(../img/tick-svg.png);
+  background-image: url(../img/icon-tick.svg);
   background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -315,6 +321,9 @@
   background-image: url(../img/radiobutton-active.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/radiobutton-active@2x.webp);
+   }
 }
 .profile__part-contacts{
   width: 708px;

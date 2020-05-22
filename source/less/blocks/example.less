@@ -39,11 +39,11 @@
   display: block;
   width: 124px;
   text-align: center;
-  background-image: url("../img/weight-back.png");
-  background-repeat: no-repeat;
-  background-size: 124px 56px;
+  border: 1px solid @light-grey;
+  border-radius: 2px;
   margin-top: 25px;
   margin: 0 auto;
+  padding-bottom: 7px;
 }
 .example__value{
   font-size: 24px;
@@ -61,9 +61,8 @@
   .font-style(12px; 12px; center; @greyish-brown);
   text-transform: lowercase;
   margin-left: 19px;
-  background-image: url("../img/grey-back.png");
-  background-repeat: no-repeat;
-  background-size: 87px 21px;
+  position: absolute;
+  background-color: @white-two;
 }
 .example__list--days{
   margin-left: 31px;
@@ -244,29 +243,5 @@
   margin-top: -215px;
   width: 610px;
   padding-left: 0px;
-}
-.example__button-wrapper{
-  padding-top: 93px;
-  padding-bottom: 74px;
-}
-.example__button{
-  padding-left: 48px;
-  text-decoration: underline;
-  text-decoration-color: @grey6;
-  text-decoration-style: dotted;
-  background-color: @white-two;
-}
-.example__button--before::before{
-  margin-left: 49px;
-}
-.example__button--before::after{
-  .absolute-style(''; absolute; 32px; 32px; -5px; 213px);
-}
-.example__button--after::before{
-  .absolute-style(''; absolute; 8px; 8px; 8px; -190px);
-}
-.example__button--after{
-  margin-right: 82px;
-  background: none;
 }
 }
