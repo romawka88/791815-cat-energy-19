@@ -14,13 +14,10 @@
   padding-top: 22px;
   padding-bottom: 23px;
   border-top: 1px solid @grey;
+  margin-left: -1px;
 }
-.site-list a[href] {
-  &:hover {
-  }
-
-  &:active {
-  }
+.site-list li:last-child{
+  border-bottom: 1px solid @grey;
 }
 @media (min-width: @tablet-width){
   .site-list{
@@ -35,7 +32,8 @@
   padding-top: 42px;
 }
 .site-list__item:last-child{
-  margin-right: 0;
+  margin-right: -1px;
+  padding-left: 2px;
 }
 .site-list li:first-child{
     width: 62px;
@@ -48,6 +46,9 @@
 }
 .site-list li:nth-child(3){
     width: 153px;
+}
+.site-list li:last-child{
+  border-bottom: none;
 }
 .site-list__item--active{
   position: relative;
@@ -69,6 +70,10 @@
     &:hover {
     color: rgba(17, 17, 17, 0.6);
     }
+
+    &:focus {
+    color: rgba(17, 17, 17, 0.3);
+    }
   }
 }
 @media (min-width: @desktop-width){
@@ -83,16 +88,32 @@
   padding-top: 74px;
   position: relative;
 }
+.site-list__item--index-color a{
+  color: @white;
+
+    &:hover {
+    color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    }
+}
 .site-list li:first-child{
   width: 69px;
   margin-left: 132px;
-  margin-right: 36px;
+  margin-right: 37px;
 }
 .site-list li:nth-child(2){
   width: 171px;
-  margin-right: 33px;
+  margin-right: 32px;
 }
 .site-list li:nth-child(3){
     width: 170px;
+}
+.site-list__item--desktop-active{
+      &::after {
+        background: @white;
+      }
 }
 }

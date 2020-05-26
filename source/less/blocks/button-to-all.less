@@ -62,13 +62,21 @@
   margin-top: 21px;
   margin-bottom: 24px;
   padding-bottom: 9px;
+
+    &:hover{
+      background-color: @grey7;
+    }
+    &:focus{
+      background-color: @grey7;
+      color: rgba(68, 68, 68, 0.3);
+    }
 }
 @media (min-width: @tablet-width){
   .button-to-all{
     width: 322px;
     padding-bottom: 39px;
-    margin-right: 100px;
-    margin-top: -435px;
+    margin-right: 30px;
+    margin-top: -434px;
   }
   .button-to-all__wrapper{
     width: 249px;
@@ -97,7 +105,7 @@
   .button-to-all__text{
     width: 167px;
     .font-style(16px; 20px; center; @black);
-    padding-top: 24px;
+    padding-top: 25px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 42px;
@@ -106,14 +114,16 @@
     width: 91px;
     margin: 0 auto;
     margin-top: 83px;
-    padding-left: 79px;
-    padding-right: 79px;
+    margin-left: -1px;
+    padding-left: 80px;
+    padding-right: 78px;
   }
 }
 @media (min-width: @desktop-width){
   .button-to-all{
-    width: 245px;
-    margin-right: 200px;
+    width: 243px;
+    margin-right: 93px;
+    margin-top: -437px;
   }
   .button-to-all__wrapper{
     width: 169px;
@@ -126,7 +136,7 @@
 }
   .button-to-all__plus::before,
   .button-to-all__plus::after{
-    left: 131px;
+    left: 54px;
     top: 83px;
     width: 61px;
     height: 2px;
@@ -134,20 +144,20 @@
   .button-to-all__title{
     width: 134px;
     .font-style(20px; 20px; center; @black);
-    padding-top: 84px;
-    padding-left: 18px;
+    padding-top: 164px;
+    padding-left: 17px;
     padding-right: 18px;
   }
   .button-to-all__text{
     width: 167px;
-    .font-style(16px; 20px; center; @black);
-    padding-top: 13px;
-    padding-left: 2px;
+    .font-style(16px; 19px; center; @black);
+    padding-top: 25px;
+    padding-left: 0px;
     padding-right: 2px;
   }
   .button-to-all__button{
     width: 91px;
-    margin-top: 38px;
+    margin-top: 83px;
     margin-left: 0px;
     padding-left: 39px;
     padding-right: 39px;

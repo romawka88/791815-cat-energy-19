@@ -69,6 +69,12 @@
 .additional__item--border{
   border-bottom: 1px solid @grey;
 }
+.additional__item-water>.additional__button{
+  margin-top: 15px;
+}
+.additional__item-water .additional__field-two{
+  margin-right: -2px;
+}
 @media (min-width: @tablet-width){
 .additional{
   min-width: @tablet-width;
@@ -81,17 +87,17 @@
 .additional__title{
   width: 338px;
   .font-style(36px; 36px; left; @black);
-  padding-top: 63px;
+  padding-top: 65px;
   padding-bottom: 81px;
   padding-left: 37px;
   position: relative;
 }
 .additional__title--line::before{
-  .absolute-style(""; absolute; 28px; 3px; 85px; -30px);
+  .absolute-style(""; absolute; 28px; 3px; 87px; -30px);
   background-color: @leaf;
 }
 .additional__title--line::after{
-  .absolute-style(""; absolute; 327px; 3px; 85px; 411px);
+  .absolute-style(""; absolute; 327px; 3px; 87px; 411px);
   background-color: @leaf;
 }
 .additional__item{
@@ -143,6 +149,9 @@
 .additional__item-water .additional__field-two{
   padding-left: 53px;
 }
+.additional__item-water .additional__button{
+  margin-top: 9px;
+}
 .additional__item-milk{
   padding-top: 1px;
 }
@@ -158,6 +167,7 @@
 }
 .additional__item--border .additional__button{
   margin-top: 9px;
+  padding-top: 10px;
 }
 }
 @media (min-width: @desktop-width){
@@ -170,15 +180,15 @@
   padding-right: 80px;
 }
 .additional__title{
-  padding-top: 69px;
+  padding-top: 75px;
   padding-bottom: 79px;
-  padding-left: 0px;
+  padding-left: 69px;
 }
 .additional__title--line::before{
-  .absolute-style(""; absolute; 70px; 3px; 91px; -110px);
+  .absolute-style(""; absolute; 70px; 3px; 98px; -40px);
 }
 .additional__title--line::after{
-  .absolute-style(""; absolute; 957px; 3px; 91px; 373px);
+  .absolute-style(""; absolute; 957px; 3px; 98px; 443px);
 }
 .additional__item{
   display: flex;
@@ -186,7 +196,12 @@
   border-top: 1px solid @grey;
   border-left: none;
   border-right: none;
+  margin-left: 70px;
+  margin-top: 1px;
   padding-bottom: 0px;
+}
+.additional__item-milk{
+  margin-top: 0;
 }
 .additional__value a{
   padding-left: 1px;
@@ -227,7 +242,7 @@
 .additional__item-water
 .additional__button{
   margin-left: 156px;
-  margin-top: 14px;
+  margin-top: 13px;
 }
 .additional__item-milk .additional__value a{
   padding-top: 7px;
@@ -259,7 +274,7 @@
   padding-top: 32px;
 }
 .additional__item--border .additional__button{
-  margin-top: 14px;
+  margin-top: 13px;
   margin-left: 195px;
 }
 }
