@@ -1,4 +1,4 @@
-.nutrition{
+.nutrition {
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -8,16 +8,16 @@
   margin-top: 1px;
 }
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-.nutrition{
-   background-image: url("../img/index-background-mobile@2x.jpg");
+  .nutrition {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
-}
-.nutrition__wrapper{
+.nutrition__wrapper {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.nutrition__header{
+.nutrition__header {
   display: block;
   width: 249px;
   .font-style(36px; 36px; center; @white);
@@ -25,7 +25,7 @@
   margin: 0 auto;
   padding-top: 27px;
 }
-.nutrition__slogan{
+.nutrition__slogan {
   display: block;
   width: 198px;
   .font-style(14px; 14px; center; @white);
@@ -36,10 +36,10 @@
   padding-right: 25px;
   padding-top: 25px;
 }
-.nutrition__program-button--top{
+.nutrition__program-button--top {
   display: none;
 }
-.nutrition__program-button--bottom{
+.nutrition__program-button--bottom {
   display: block;
   width: 208px;
   color: @white;
@@ -52,116 +52,116 @@
   padding-left: 72px;
   margin-top: 3px;
 }
-.nutrition__program-button{
-  &:hover{
-     background-color: @grass;
-   }
-   &:focus{
-     background-color: @grass;
-     color: rgba(255, 255, 255, 0.3);
-   }
+.nutrition__program-button {
+  &:hover {
+    background-color: @grass;
+  }
+  &:focus {
+    background-color: @grass;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
-.nutrition__can-image{
+.nutrition__can-image {
   display: block;
   width: 280px;
   margin: 0 auto;
   padding-top: 28px;
 }
-@media (min-width: @tablet-width){
-.nutrition{
-  min-width: @tablet-width;
-  background-image: none;
+@media (min-width: @tablet-width) {
+  .nutrition {
+    min-width: @tablet-width;
+    background-image: none;
+  }
+  .nutrition__wrapper {
+    width: 709px;
+    margin: 0 auto;
+    padding-left: 29px;
+    padding-right: 31px;
+  }
+  .nutrition__header {
+    width: 414px;
+    .font-style(60px; 60px; left; @black);
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-left: 88px;
+    padding-right: 207px;
+  }
+  .nutrition__slogan {
+    width: 283px;
+    .font-style(20px; 20px; left; @black);
+    margin: 0 auto;
+    padding-left: 89px;
+    padding-top: 42px;
+    padding-right: 337px;
+  }
+  .nutrition__can-image {
+    width: 709px;
+    margin: 0 auto;
+    margin-top: -9px;
+  }
+  .nutrition__program-button--top {
+    display: block;
+    width: 191px;
+    .font-style(20px; 20px; left; @white);
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 29px;
+    background-color: @leaf;
+    margin-left: 90px;
+    margin-top: 47px;
+    position: absolute;
+  }
+  .nutrition__program-button--bottom {
+    display: none;
+  }
 }
-.nutrition__wrapper{
-  width: 709px;
-  margin: 0 auto;
-  padding-left: 29px;
-  padding-right: 31px;
-}
-.nutrition__header{
-  width: 414px;
-  .font-style(60px; 60px; left; @black);
-  padding-top: 40px;
-  margin: 0 auto;
-  padding-left: 88px;
-  padding-right: 207px;
-}
-.nutrition__slogan{
-  width: 283px;
-  .font-style(20px; 20px; left; @black);
-  margin: 0 auto;
-  padding-left: 89px;
-  padding-top: 42px;
-  padding-right: 337px;
-}
-.nutrition__can-image{
-  width: 709px;
-  margin: 0 auto;
-  margin-top: -9px;
-}
-.nutrition__program-button--top{
-  display: block;
-   width: 191px;
-   .font-style(20px; 20px; left; @white);
-   text-transform: uppercase;
-   margin: 0 auto;
-   padding-top: 16px;
-   padding-bottom: 16px;
-   padding-left: 25px;
-   padding-right: 29px;
-   background-color: @leaf;
-   margin-left: 90px;
-   margin-top: 47px;
-   position: absolute;
-}
-.nutrition__program-button--bottom{
-  display: none;
-}
-}
-@media (min-width: @desktop-width){
-  .nutrition{
+@media (min-width: @desktop-width) {
+  .nutrition {
     min-width: @desktop-width;
     background-image: none;
     background-color: transparent;
   }
-  .nutrition__wrapper{
-  width: 1220px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  display: flex;
+  .nutrition__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
   }
-  .nutrition__main-header{
-  width: 570px;
+  .nutrition__main-header {
+    width: 570px;
   }
-  .nutrition__header{
+  .nutrition__header {
     width: 414px;
     margin-left: 0;
     padding-right: 76px;
     padding-left: 80px;
     padding-top: 222px;
   }
-  .nutrition__can-image{
+  .nutrition__can-image {
     padding-top: 142px;
     margin: 0 auto;
     margin-left: -120px;
   }
-  .nutrition__picture{
+  .nutrition__picture {
     width: 552px;
   }
-  .nutrition__slogan{
+  .nutrition__slogan {
     width: 283px;
     padding-left: 81px;
     padding-right: 207px;
   }
-  .nutrition__program-button--top{
-   width: 191px;
-   .font-style(20px; 20px; left; @white);
-   padding-top: 16px;
-   padding-bottom: 16px;
-   padding-left: 26px;
-   padding-right: 28px;
-   margin-top: 52px;
-   margin-left: 80px;
+  .nutrition__program-button--top {
+    width: 191px;
+    .font-style(20px; 20px; left; @white);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+    padding-right: 28px;
+    margin-top: 52px;
+    margin-left: 80px;
   }
 }

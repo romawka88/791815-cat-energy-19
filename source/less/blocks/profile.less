@@ -1,14 +1,14 @@
-.profile{
+.profile {
   width: 320px;
   margin: 0 auto;
   text-transform: uppercase;
 }
-.profile__wrapper{
+.profile__wrapper {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.profile__header{
+.profile__header {
   display: block;
   width: 226px;
   .font-style(14px; 18px; left; @black);
@@ -18,56 +18,56 @@
   margin: 0 auto;
   padding-top: 1px;
 }
-.profile__form{
+.profile__form {
   margin-top: 39px;
 }
-.profile__label{
+.profile__label {
   .font-style(16px; 18px; left; @black-two);
   padding-top: 13px;
 }
-.profile__label--weight{
+.profile__label--weight {
   display: block;
   width: 60px;
 }
-.profile__label--age{
+.profile__label--age {
   display: block;
   width: 94px;
 }
 .profile__input,
 .profile__email-input,
-.profile__phone-input{
+.profile__phone-input {
   border: 1px solid rgb(205, 205, 205, 0.5);
 
-    &:hover{
-      border: 1px solid @light-grey;
-    }
-    &:active{
-      border: 2px solid @greyish-brown;
-      }
-    &:invalid{
-      box-shadow: inset 0px 0px 2px @peachy-pink;
-    }
+  &:hover {
+    border: 1px solid @light-grey;
+  }
+  &:active {
+    border: 2px solid @greyish-brown;
+  }
+  &:invalid {
+    box-shadow: inset 0px 0px 2px @peachy-pink;
+  }
 }
-.profile__input--name{
+.profile__input--name {
   display: block;
   width: 229px;
   margin-left: 14px;
   padding: 12px 1px 13px 14px;
   margin-bottom: 14px;
 }
-.profile__input--weight{
+.profile__input--weight {
   display: block;
   width: 186px;
   padding: 12px 0px 13px 14px;
   margin-bottom: 14px;
 }
-.profile__input--age{
+.profile__input--age {
   display: block;
   width: 155px;
   padding: 13px 0px 12px 15px;
   margin-bottom: 14px;
 }
-.profile__part-program{
+.profile__part-program {
   display: block;
   width: 320px;
   border: 1px solid @grey;
@@ -75,7 +75,7 @@
   margin-top: 9px;
   padding-bottom: 16px;
 }
-.profile__radio-button{
+.profile__radio-button {
   width: 28px;
   height: 28px;
   left: 20px;
@@ -84,49 +84,49 @@
   border: 1px solid @light-grey;
   position: absolute;
 
-   &:hover{
-     border: 1px solid @pinkish-grey;
-   }
+  &:hover {
+    border: 1px solid @pinkish-grey;
+  }
 }
-.profile__program-input:focus+.profile__radio-button{
+.profile__program-input:focus + .profile__radio-button {
   outline: 2px solid #bf1818;
 }
-.profile__program-input:checked+.profile__radio-button{
+.profile__program-input:checked + .profile__radio-button {
   width: 30px;
   height: 30px;
   border: none;
   background-image: url(../img/Layer2.png);
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/Layer2@2x.webp);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/Layer2@2x.webp);
+  }
 }
-.profile__program-input:disabled+.profile__radio-button{
+.profile__program-input:disabled + .profile__radio-button {
   border-color: @white-two;
 }
-.profile__program-input:checked:disabled+.profile__radio-button{
+.profile__program-input:checked:disabled + .profile__radio-button {
   width: 12px;
   height: 12px;
   background-image: url(../img/Layer2.png);
   opacity: 0.4;
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/Layer2@2x.webp);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/Layer2@2x.webp);
+  }
 }
-.profile__program-label{
+.profile__program-label {
   display: block;
   margin-bottom: -3px;
   .font-style(16px; 18px; left; @black-two);
   padding-left: 66px;
   position: relative;
 }
-.profile__program-input{
+.profile__program-input {
   .font-style(16px; 18px; left; @black-two);
 }
-.profile__program-field{
+.profile__program-field {
   margin-top: 27px;
   margin-bottom: 15px;
 }
-.profile__title{
+.profile__title {
   display: block;
   width: 181px;
   .font-style(24px; 24px; left; @black);
@@ -136,67 +136,67 @@
   position: relative;
   margin-bottom: 34px;
 }
-.profile__title--line-contacts::after{
-  .absolute-style(""; absolute; 99px; 3px; 14px; 202px);
+.profile__title--line-contacts::after {
+  .absolute-style("" ; absolute; 99px; 3px; 14px; 202px);
   background-color: @leaf;
 }
-.profile__field{
+.profile__field {
   display: flex;
   justify-content: space-between;
   width: 280px;
 }
 .profile__input,
 .profile__email-input,
-.profile__phone-input{
+.profile__phone-input {
   .font-style(16px; 18px; left; @greyish-brown);
   text-transform: uppercase;
   border-color: transparent;
   border: 1px solid @light-grey;
 }
 .profile__email-input,
-.profile__phone-input{
+.profile__phone-input {
   padding-left: 15px;
   margin-bottom: 14px;
 }
-.profile__email-input{
+.profile__email-input {
   display: block;
   width: 201px;
   padding: 12px 0px 13px 16px;
   pasition: relative;
 }
-.profile__email-input--email{
+.profile__email-input--email {
   background-image: url("../img/icon-mail.svg");
   background-position: 185px 14px;
   background-repeat: no-repeat;
   background-size: 18px 14px;
 }
-.profile__email-input--email:active{
-  background-image: url("../img/mail.png");
+.profile__email-input--email:active {
+  background-image: url("../img/icon-mail.png");
 
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/mail@2x.png);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/icon-mail@2x.png);
+  }
 }
-.profile__email-input--email:invalid{
-  background-image: url("../img/mail-red.png");
+.profile__email-input--email:invalid {
+  background-image: url("../img/icon-mail-red.png");
 
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/mail-red@2x.png);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/icon-mail-red@2x.png);
+  }
 }
-.profile__phone-input{
+.profile__phone-input {
   display: block;
   width: 186px;
   padding-top: 12px;
   padding-bottom: 13px;
 }
-.profile__phone-input--phone{
+.profile__phone-input--phone {
   background-image: url("../img/icon-phone.svg");
   background-position: 170px 11px;
   background-repeat: no-repeat;
   background-size: 21px 21px;
 }
-.profile__comments-title{
+.profile__comments-title {
   display: block;
   width: 118px;
   .font-style(24px; 24px; left; @black);
@@ -205,11 +205,11 @@
   margin-top: 14px;
   position: relative;
 }
-.profile__comments-title--line::after{
-  .absolute-style(""; absolute; 158px; 3px; 14px; 143px);
+.profile__comments-title--line::after {
+  .absolute-style("" ; absolute; 158px; 3px; 14px; 143px);
   background-color: @leaf;
 }
-.profile__textarea{
+.profile__textarea {
   display: block;
   width: 261px;
   height: 133px;
@@ -219,22 +219,21 @@
   padding-top: 12px;
   padding-left: 15px;
 }
-.profile__title--line-additions{
+.profile__title--line-additions {
   padding-bottom: 24px;
 }
-.profile__title--line-additions::after{
-  .absolute-style(""; absolute; 136px; 3px; 14px; 165px);
+.profile__title--line-additions::after {
+  .absolute-style("" ; absolute; 136px; 3px; 14px; 165px);
   background-color: @leaf;
 }
-.profile__additions-field{
+.profile__additions-field {
   display: block;
   position: relative;
   margin-bottom: 40px;
   margin-top: -17px;
   margin-left: 47px;
-
 }
-.profile__checkbox{
+.profile__checkbox {
   width: 28px;
   height: 28px;
   border: 1px solid @light-grey;
@@ -242,37 +241,37 @@
   left: -46px;
   top: -6px;
 }
-.profile__additions-input:focus+.profile__checkbox{
+.profile__additions-input:focus + .profile__checkbox {
   outline: 2px solid #bf1818;
 }
-.profile__additions-input:checked+.profile__checkbox{
+.profile__additions-input:checked + .profile__checkbox {
   width: 28px;
   height: 28px;
-  background-image: url(../img/tick.png);
+  background-image: url(../img/icon-tick.png);
   background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: center center;
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/tick@2x.png);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/icon-tick@2x.png);
+  }
 }
-.profile__additions-input:disabled+.profile__checkbox{
+.profile__additions-input:disabled + .profile__checkbox {
   border: 1px solid @light-grey;
   opacity: 0.4;
 }
-.profile__additions-input:checked:disabled+.profile__checkbox{
+.profile__additions-input:checked:disabled + .profile__checkbox {
   width: 28px;
   height: 28px;
-  background-image: url(../img/tick.png);
+  background-image: url(../img/icon-tick.png);
   background-size: 22px 17px;
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.4;
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-     background-image: url(../img/tick@2x.png);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/icon-tick@2x.png);
+  }
 }
-.profile__submit{
+.profile__submit {
   display: block;
   width: 280px;
   background-color: @leaf;
@@ -281,16 +280,16 @@
   border: none;
   padding: 10px 76px 10px 80px;
   margin: 0 auto;
-    &:hover {
+  &:hover {
     background-color: @grass;
-    }
+  }
 
-    &:active {
+  &:active {
     background-color: @grass;
     color: rgba(255, 255, 255, 0.3);
-    }
+  }
 }
-.profile__required{
+.profile__required {
   display: block;
   width: 161px;
   .font-style(14px; 16px; center; @greyish-brown);
@@ -299,82 +298,83 @@
   padding-top: 21px;
   padding-left: 61px;
 }
-@media (min-width: @tablet-width){
-.profile{
+
+@media (min-width: @tablet-width) {
+.profile {
   min-width: @tablet-width;
 }
-.profile__wrapper{
+.profile__wrapper {
   width: 708px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 57px;
 }
-.profile__header{
+.profile__header {
   width: 323px;
   .font-style(20px; 30px; left; @black);
   padding-left: 41px;
   padding-right: 344px;
   padding-top: 21px;
 }
-.profile__form{
+.profile__form {
   margin-top: 65px;
 }
-.profile__field{
+.profile__field {
   width: 629px;
   padding-left: 42px;
   padding-right: 37px;
 }
-.profile__label{
+.profile__label {
   .font-style(20px; 20px; left; @black-two);
   padding-top: 16px;
 }
-.profile__label--weight{
+.profile__label--weight {
   width: 75px;
 }
-.profile__label--age{
+.profile__label--age {
   width: 117px;
 }
 .profile__input,
 .profile__email-input,
-.profile__phone-input{
+.profile__phone-input {
   .font-style(20px; 20px; left; @greyish-brown);
 }
-.profile__input--name{
+.profile__input--name {
   width: 567px;
   margin-left: 14px;
   padding: 10px 0px 10px 18px;
   margin-bottom: 20px;
 }
-.profile__input--weight{
+.profile__input--weight {
   width: 516px;
   margin-left: 15px;
   padding: 10px 0px 10px 19px;
   margin-bottom: 20px;
 }
-.profile__input--age{
+.profile__input--age {
   width: 478px;
   margin-left: 14px;
   padding: 10px 0px 10px 18px;
 }
-.profile__part-program{
+.profile__part-program {
   width: 628px;
   margin-top: 58px;
   margin-left: 41px;
   padding-bottom: 20px;
 }
-.profile__program-label{
+.profile__program-label {
   .font-style(20px; 20px; left; @black-two);
   padding-left: 87px;
   padding-top: 7px;
   padding-bottom: 2px;
 }
-.profile__radio-button{
+.profile__radio-button {
   width: 38px;
   height: 38px;
   left: 27px;
   top: -3px;
 }
-.profile__program-input:checked+.profile__radio-button{
+.profile__program-input:checked + .profile__radio-button {
   width: 38px;
   height: 38px;
   left: 27px;
@@ -382,68 +382,68 @@
   border-radius: 50%;
   border: 1px solid @light-grey;
   position: absolute;
-  background-image: url(../img/radiobutton-active.png);
+  background-image: url(../img/icon-radiobutton-active.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url(../img/radiobutton-active@2x.webp);
-   }
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url(../img/icon-radiobutton-active@2x.webp);
+  }
 }
-.profile__part-contacts{
+.profile__part-contacts {
   width: 708px;
 }
-.profile__title{
+.profile__title {
   width: 512px;
   .font-style(36px; 36px; left; @black);
   padding: 75px 156px 34px 40px;
   margin: 0 auto;
 }
-.profile__title--line-contacts::before{
-  .absolute-style(""; absolute; 145px; 3px; 97px; 593px);
+.profile__title--line-contacts::before {
+  .absolute-style("" ; absolute; 145px; 3px; 97px; 593px);
   background-color: @leaf;
 }
-.profile__title--line-contacts::after{
-  .absolute-style(""; absolute; 30px; 3px; 97px; -30px);
+.profile__title--line-contacts::after {
+  .absolute-style("" ; absolute; 30px; 3px; 97px; -30px);
 }
-.profile__field{
+.profile__field {
   padding-right: 0;
   margin-right: 0;
 }
-.profile__part-email-field{
+.profile__part-email-field {
   width: 631px;
   padding-top: 41px;
 }
-.profile__email-input{
+.profile__email-input {
   width: 490px;
   padding: 10px 40px 10px 20px;
   margin-left: 15px;
   margin-top: 1px;
 }
-.profile__email-input--email{
+.profile__email-input--email {
   background-position: 511px 19px;
 }
-.profile__part-phone-field{
+.profile__part-phone-field {
   width: 631px;
   padding-top: 6px;
 }
-.profile__phone-label{
+.profile__phone-label {
   margin-left: -3px;
 }
-.profile__phone-input{
+.profile__phone-input {
   width: 500px;
   padding: 10px 35px 10px 19px;
   margin-left: 15px;
   margin-right: 1px;
 }
-.profile__phone-input--phone{
+.profile__phone-input--phone {
   background-position: 497px 15px;
   background-repeat: no-repeat;
   background-size: 21px 21px;
 }
-.profile__part-comments{
+.profile__part-comments {
   width: 708px;
 }
-.profile__comments-title{
+.profile__comments-title {
   width: 177px;
   .font-style(36px; 36px; left; @black);
   padding-top: 51px;
@@ -452,14 +452,14 @@
   padding-left: 2px;
   margin: 0 auto;
 }
-.profile__comments-title--line::before{
-  .absolute-style(""; absolute; 30px; 3px; 73px; -70px);
+.profile__comments-title--line::before {
+  .absolute-style("" ; absolute; 30px; 3px; 73px; -70px);
   background-color: @leaf;
 }
-.profile__comments-title--line::after{
-  .absolute-style(""; absolute; 480px; 3px; 73px; 221px);
+.profile__comments-title--line::after {
+  .absolute-style("" ; absolute; 480px; 3px; 73px; 221px);
 }
-.profile__textarea{
+.profile__textarea {
   width: 609px;
   height: 160px;
   .font-style(20px; 30px; left; @greyish-brown);
@@ -467,75 +467,75 @@
   padding-left: 18px;
   margin: 35px 1px 0px 40px;
 }
-.profile__part-additions{
+.profile__part-additions {
   width: 708px;
 }
-.profile__title--line-additions{
+.profile__title--line-additions {
   width: 209px;
   margin: 0 auto;
   padding: 65px 422px 53px 0px;
 }
-.profile__title--line-additions::before{
-  .absolute-style(""; absolute; 31px; 3px; 87px; -70px);
+.profile__title--line-additions::before {
+  .absolute-style("" ; absolute; 31px; 3px; 87px; -70px);
   background-color: @leaf;
 }
-.profile__title--line-additions::after{
-  .absolute-style(""; absolute; 446px; 3px; 87px; 253px);
+.profile__title--line-additions::after {
+  .absolute-style("" ; absolute; 446px; 3px; 87px; 253px);
 }
-.profile__additions-align{
+.profile__additions-align {
   display: flex;
   flex-wrap: wrap;
 }
-.profile__additions-field{
+.profile__additions-field {
   margin: 0;
 }
-.profile__sugar-field{
+.profile__sugar-field {
   padding-left: 59px;
   padding-top: 14px;
   padding-right: 124px;
   margin-left: 39px;
 }
-.profile__water-field{
+.profile__water-field {
   padding-top: 14px;
   padding-right: 95px;
   padding-left: 60px;
 }
-.profile__milk-field{
+.profile__milk-field {
   padding-top: 50px;
   padding-left: 59px;
   padding-right: 218px;
   margin-left: 39px;
 }
-.profile__vitamins-field{
+.profile__vitamins-field {
   padding-top: 50px;
   padding-left: 59px;
 }
-.profile__checkbox{
+.profile__checkbox {
   width: 38px;
   height: 38px;
 }
-.profile__checkbox-sugar{
+.profile__checkbox-sugar {
   left: 1px;
   top: 5px;
 }
-.profile__checkbox-water{
+.profile__checkbox-water {
   left: 1px;
   top: 5px;
 }
-.profile__checkbox-milk{
+.profile__checkbox-milk {
   left: 1px;
   top: 41px;
 }
-.profile__checkbox-vitamins{
+.profile__checkbox-vitamins {
   left: 1px;
   top: 41px;
 }
-.profile__additions-input:checked+.profile__checkbox{
+.profile__additions-input:checked + .profile__checkbox {
   width: 38px;
   height: 38px;
   background-size: 21px 16px;
 }
-.profile__submit{
+.profile__submit {
   width: 283px;
   .font-style(20px; 20px; center; @white);
   padding: 15px 66px 16px 63px;
@@ -543,7 +543,7 @@
   margin-left: 41px;
   margin-right: 0;
 }
-.profile__required{
+.profile__required {
   display: block;
   width: 180px;
   .font-style(16px; 16px; left; @greyish-brown);
@@ -552,57 +552,57 @@
   margin-left: 385px;
 }
 }
-@media (min-width: @desktop-width){
-.profile{
+@media (min-width: @desktop-width) {
+.profile {
   min-width: @desktop-width;
 }
-.profile__wrapper{
+.profile__wrapper {
   width: 1220px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 0;
 }
-.profile__header{
+.profile__header {
   padding-left: 9px;
   padding-right: 908px;
   padding-top: 3px;
 }
-.profile__form{
+.profile__form {
   margin-top: 66px;
   padding-bottom: 75px;
 }
-.profile__data-align{
+.profile__data-align {
   display: flex;
   width: 1220px;
 }
-.profile__part-data{
+.profile__part-data {
   width: 570px;
 }
-.profile__field{
+.profile__field {
   width: 578px;
   padding: 0;
 }
-.profile__label{
+.profile__label {
   padding-top: 15px;
   padding-left: 9px;
 }
-.profile__input--name{
+.profile__input--name {
   width: 506px;
   margin-left: 17px;
   padding: 9px 0px 10px 18px;
   margin-bottom: 20px;
 }
-.profile__input--weight{
+.profile__input--weight {
   width: 455px;
   margin-left: 15px;
   padding: 10px 0px 10px 18px;
   margin-bottom: 20px;
 }
-.profile__input--age{
+.profile__input--age {
   width: 415px;
   padding: 10px 0px 10px 18px;
 }
-.profile__part-program{
+.profile__part-program {
   width: 570px;
   margin-top: -1px;
   margin-left: 88px;
@@ -610,57 +610,57 @@
   padding-bottom: 0px;
   margin-bottom: 14px;
 }
-.profile__part-contacts{
+.profile__part-contacts {
   width: 1220px;
 }
-.profile__title{
+.profile__title {
   padding: 55px 708px 34px 8px;
   margin-left: -1px;
 }
-.profile__title--line-contacts::before{
-  .absolute-style(""; absolute; 70px; 3px; 77px; -100px);
+.profile__title--line-contacts::before {
+  .absolute-style("" ; absolute; 70px; 3px; 77px; -100px);
 }
-.profile__title--line-contacts::after{
-  .absolute-style(""; absolute; 775px; 3px; 77px; 562px);
+.profile__title--line-contacts::after {
+  .absolute-style("" ; absolute; 775px; 3px; 77px; 562px);
 }
-.profile__contacts-align{
+.profile__contacts-align {
   display: flex;
 }
-.profile__email-label{
+.profile__email-label {
   padding-top: 57px;
   width: 65px;
 }
-.profile__email-input{
+.profile__email-input {
   width: 439px;
   padding: 10px 40px 10px 18px;
   margin-left: 22px;
   margin-top: 42px;
 }
-.profile__email-input--email{
+.profile__email-input--email {
   background-position: 447px 19px;
 }
-.profile__part-phone-field{
+.profile__part-phone-field {
   margin-left: 78px;
 }
-.profile__phone-label{
+.profile__phone-label {
   padding-top: 57px;
   padding-left: 4px;
 }
-.profile__phone-input{
+.profile__phone-input {
   width: 410px;
   padding: 10px 40px 10px 19px;
   margin-left: 17px;
   margin-right: 0px;
   margin-top: 42px;
 }
-.profile__phone-input--phone{
+.profile__phone-input--phone {
   background-position: 431px 15px;
 }
-.profile__part-comments{
+.profile__part-comments {
   width: 1220px;
   margin-top: 16px;
 }
-.profile__comments-title{
+.profile__comments-title {
   width: 177px;
   .font-style(36px; 36px; left; @black);
   padding-top: 37px;
@@ -668,68 +668,68 @@
   padding-right: 1036px;
   padding-left: 7px;
 }
-.profile__comments-title--line::before{
-  .absolute-style(""; absolute; 70px; 3px; 59px; -101px);
+.profile__comments-title--line::before {
+  .absolute-style("" ; absolute; 70px; 3px; 59px; -101px);
 }
-.profile__comments-title--line::after{
-  .absolute-style(""; absolute; 1110px; 3px; 59px; 226px);
+.profile__comments-title--line::after {
+  .absolute-style("" ; absolute; 1110px; 3px; 59px; 226px);
 }
-.profile__textarea{
+.profile__textarea {
   width: 1197px;
   margin-left: 8px;
 }
-.profile__part-additions{
+.profile__part-additions {
   width: 1220px;
 }
-.profile__title--line-additions{
+.profile__title--line-additions {
   width: 209px;
   margin: 0 auto;
   padding: 67px 1113px 53px 9px;
   margin-left: -1px;
 }
-.profile__title--line-additions::before{
-  .absolute-style(""; absolute; 70px; 3px; 90px; -101px);
+.profile__title--line-additions::before {
+  .absolute-style("" ; absolute; 70px; 3px; 90px; -101px);
   background-color: @leaf;
 }
-.profile__title--line-additions::after{
-  .absolute-style(""; absolute; 1183px; 3px; 90px; 261px);
+.profile__title--line-additions::after {
+  .absolute-style("" ; absolute; 1183px; 3px; 90px; 261px);
 }
-.profile__sugar-field{
+.profile__sugar-field {
   padding-left: 19px;
 }
-.profile__water-field{
+.profile__water-field {
   padding-left: 31px;
 }
-.profile__milk-field{
+.profile__milk-field {
   padding-top: 14px;
   padding-left: 54px;
 }
-.profile__vitamins-field{
+.profile__vitamins-field {
   padding-top: 14px;
   padding-left: 31px;
 }
-.profile__checkbox-sugar{
+.profile__checkbox-sugar {
   left: -31px;
 }
-.profile__checkbox-water{
+.profile__checkbox-water {
   left: -18px;
 }
-.profile__checkbox-milk{
+.profile__checkbox-milk {
   left: 5px;
   top: 5px;
 }
-.profile__checkbox-vitamins{
+.profile__checkbox-vitamins {
   left: -19px;
   top: 5px;
 }
-.profile__submit{
+.profile__submit {
   width: 568px;
   padding: 15px 205px 16px 208px;
   margin-top: 70px;
   margin-left: 9px;
-  margin-right: 1px;;
+  margin-right: 1px;
 }
-.profile__required{
+.profile__required {
   margin-left: 660px;
 }
 }

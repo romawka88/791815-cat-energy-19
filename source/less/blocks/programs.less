@@ -1,21 +1,21 @@
-.programs{
+.programs {
   min-width: 320px;
   margin: 0 auto;
 }
 .programs__wrapper,
-.programs__list{
+.programs__list {
   min-width: 280px;
   padding-left: 20px;
   padding-right: 20px;
 }
-.programs__item{
+.programs__item {
   display: block;
   min-width: 280px;
   margin-left: -20px;
   background-color: @white-two;
   list-style: none;
 }
-.programs__title{
+.programs__title {
   .font-style(24px; 37px; left; @black);
   text-transform: uppercase;
   font-weight: 400;
@@ -24,21 +24,21 @@
   padding-left: 91px;
   margin-top: 22px;
 }
-.programs__item--slim{
+.programs__item--slim {
   background-image: url("../img/icon-cat-slim.svg"),
     url("../img/ellipse-tablet.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 35px 49px, 50px 51px;
   background-position: 30px 22px, 22px 24px;
 }
-.programs__item--pro{
+.programs__item--pro {
   background-image: url("../img/icon-cat-pro.svg"),
     url("../img/ellipse-tablet.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 67px 28px, 50px 51px;
   background-position: 13px 35px, 22px 23px;
 }
-.programs__description{
+.programs__description {
   display: block;
   min-width: 240px;
   margin: 0 auto;
@@ -50,7 +50,7 @@
   padding-bottom: 22px;
   border-bottom: 1px solid @grey;
 }
-.programs__link{
+.programs__link {
   display: block;
   width: 126px;
   .font-style(16px; 16px; left; @black);
@@ -60,7 +60,7 @@
   padding-right: 138px;
   margin: 0 auto;
 }
-.programs__link--arrow{
+.programs__link--arrow {
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-size: 24px 12px;
@@ -68,166 +68,154 @@
   padding-top: 19px;
   padding-bottom: 22px;
 
-   &:hover{
+  &:hover {
     background-size: 34px 12px;
-    background-image: url("../img/right-arrow-verylong-hover.svg");
-   }
-   &:focus{
+    background-image: url("../img/icon-right-arrow-verylong-hover.svg");
+  }
+  &:focus {
     background-size: 34px 12px;
-    background-image: url("../img/right-arrow-verylong-focus.png");
+    background-image: url("../img/icon-right-arrow-verylong-focus.png");
     color: rgba(17, 17, 17, 0.3);
-   }
+  }
 }
-.programs__item--pro{
+.programs__item--pro {
   margin-top: -2px;
 }
-.programs__link--arrow-pro{
+.programs__link--arrow-pro {
   background-position: 98px 21px;
 }
-@media (min-width: @tablet-width){
-.programs{
-  min-width: @tablet-width;
-  margin-top: -21px;
+@media (min-width: @tablet-width) {
+  .programs {
+    min-width: @tablet-width;
+    margin-top: -21px;
+  }
+  .programs__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .programs__list {
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .programs__item {
+    display: block;
+    width: 708px;
+    margin-left: -38px;
+    padding-bottom: 40px;
+  }
+  .programs__title {
+    display: block;
+    width: 206px;
+    .font-style(36px; 37px; left; @black);
+    margin: 0 auto;
+    padding-left: 53px;
+    padding-right: 449px;
+    padding-top: 76px;
+    margin-top: 22px;
+  }
+  .programs__item--slim {
+    background-size: 141px 194px, 200px 200px;
+    background-position: 475px 80px, 446px 92px;
+  }
+  .programs__item--pro {
+    background-size: 268px 113px, 200px 200px;
+    background-position: 412px 134px, 448px 91px;
+  }
+  .programs__description {
+    .font-style(16px; 24px; left; @greyish-brown);
+    width: 372px;
+    margin: 0 auto;
+    padding-left: 52px;
+    padding-right: 284px;
+    padding-top: 25px;
+    border: none;
+  }
+  .programs__link {
+    width: 170px;
+    .font-style(20px; 20px; left; @black);
+    margin: 0 auto;
+    padding-left: 52px;
+    padding-right: 486px;
+    padding-top: 34px;
+  }
+  .programs__link--arrow {
+    background-position: 184px 38px;
+  }
+  .programs__item--pro {
+    margin-top: 30px;
+  }
+  .programs__description--width {
+    width: 340px;
+    padding-left: 52px;
+    padding-right: 316px;
+    padding-top: 25px;
+  }
+  .programs__link--arrow-pro {
+    background-position: 178px 38px;
+  }
 }
-.programs__wrapper{
-  width: 708px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.programs__list{
-  width: 708px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.programs__item{
-  display: block;
-  width: 708px;
-  margin-left: -38px;
-  padding-bottom: 40px;
-}
-.programs__title{
-  display: block;
-  width: 206px;
-  .font-style(36px; 37px; left; @black);
-  margin: 0 auto;
-  padding-left: 53px;
-  padding-right: 449px;
-  padding-top: 76px;
-  margin-top: 22px;
-}
-.programs__item--slim{
-  background-image: url("../img/icon-cat-slim.svg"),
-    url("../img/ellipse-tablet.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 141px 194px, 200px 200px;
-  background-position: 475px 80px, 446px 92px;
-}
-.programs__item--pro{
-  background-image: url("../img/icon-cat-pro.svg"),
-    url("../img/ellipse-tablet.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 268px 113px, 200px 200px;
-  background-position: 412px 134px, 448px 91px;
-}
-.programs__description{
-  .font-style(16px; 24px; left; @greyish-brown);
-  width: 372px;
-  margin: 0 auto;
-  padding-left: 52px;
-  padding-right: 284px;
-  padding-top: 25px;
-  border: none;
-}
-.programs__link{
-  width: 170px;
-  .font-style(20px; 20px; left; @black);
-  margin: 0 auto;
-  padding-left: 52px;
-  padding-right: 486px;
-  padding-top: 34px;
-}
-.programs__link--arrow{
-  background-position: 184px 38px;
-}
-.programs__item--pro{
-  margin-top: 30px;
-}
-.programs__description--width{
-  width: 340px;
-  padding-left: 52px;
-  padding-right: 316px;
-  padding-top: 25px;
-}
-.programs__link--arrow-pro{
-  background-position: 178px 38px;
-}
-}
-@media (min-width: @desktop-width){
-  .programs{
+@media (min-width: @desktop-width) {
+  .programs {
     width: @desktop-width;
   }
-  .programs__wrapper{
+  .programs__wrapper {
     width: 1220px;
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
   }
-  .programs__list{
+  .programs__list {
     width: 1220px;
     display: flex;
     margin-top: 156px;
     margin-left: 9px;
   }
-  .programs__item{
+  .programs__item {
     width: 570px;
     padding-bottom: 40px;
   }
-  .programs__item--slim{
-  background-image: url("../img/icon-cat-slim.svg"),
-    url("../img/ellipse-tablet.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 71px 97px, 100px 100px;
-  background-position: 66px 41px, 52px 47px;
-}
-.programs__item--pro{
-  background-image: url("../img/icon-cat-pro.svg"),
-    url("../img/ellipse-tablet.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 134px 57px, 100px 100px;
-  background-position: 34px 69px, 52px 47px;
-  margin-left: 80px;
-  padding-top: 0;
-  margin-top: 0;
-}
-.programs__title{
-  display: block;
-  width: 206px;
-  margin: 0 auto;
-  padding-left: 214px;
-  padding-right: 150px;
-  padding-top: 54px;
-  margin-top: 22px;
-}
-.programs__description{
-  width: 462px;
-  border-bottom: none;
-  margin-bottom:0;
-  padding-top: 92px;
-  padding-right: 56px;
-}
-.programs__link{
-  padding-top: 9px;
-  padding-right: 348px;
-}
-.programs__link--arrow{
-  background-position: 184px 12px;
-}
-.programs__link--arrow-pro{
-  background-position: 178px 13px;
-}
-.programs__description{
-  margin-top: -18px;
-}
+  .programs__item--slim {
+    background-size: 71px 97px, 100px 100px;
+    background-position: 66px 41px, 52px 47px;
+  }
+  .programs__item--pro {
+    background-size: 134px 57px, 100px 100px;
+    background-position: 34px 69px, 52px 47px;
+    margin-left: 80px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .programs__title {
+    display: block;
+    width: 206px;
+    margin: 0 auto;
+    padding-left: 214px;
+    padding-right: 150px;
+    padding-top: 54px;
+    margin-top: 22px;
+  }
+  .programs__description {
+    width: 462px;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-top: 92px;
+    padding-right: 56px;
+  }
+  .programs__link {
+    padding-top: 9px;
+    padding-right: 348px;
+  }
+  .programs__link--arrow {
+    background-position: 184px 12px;
+  }
+  .programs__link--arrow-pro {
+    background-position: 178px 13px;
+  }
+  .programs__description {
+    margin-top: -18px;
+  }
 }
