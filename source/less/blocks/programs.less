@@ -1,16 +1,16 @@
 .programs{
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 .programs__wrapper,
 .programs__list{
-  width: 280px;
+  min-width: 280px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .programs__item{
   display: block;
-  width: 280px;
+  min-width: 280px;
   margin-left: -20px;
   background-color: @white-two;
   list-style: none;
@@ -40,8 +40,10 @@
 }
 .programs__description{
   display: block;
-  width: 240px;
+  min-width: 240px;
   margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 40px;
   padding-top: 29px;
   font-family: @arial-font;
   color: @greyish-brown;
@@ -54,7 +56,7 @@
   .font-style(16px; 16px; left; @black);
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 19px;
+  padding-left: 2px;
   padding-right: 138px;
   margin: 0 auto;
 }
@@ -62,19 +64,30 @@
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position: 117px 21px;
+  background-position: 100px 21px;
   padding-top: 19px;
   padding-bottom: 22px;
+
+   &:hover{
+    background-size: 34px 12px;
+    background-image: url("../img/right-arrow-verylong-hover.svg");
+   }
+   &:focus{
+    background-size: 34px 12px;
+    background-image: url("../img/right-arrow-verylong-focus.png");
+    color: rgba(17, 17, 17, 0.3);
+   }
 }
 .programs__item--pro{
   margin-top: -2px;
 }
 .programs__link--arrow-pro{
-  background-position: 115px 21px;
+  background-position: 98px 21px;
 }
 @media (min-width: @tablet-width){
 .programs{
   min-width: @tablet-width;
+  margin-top: -21px;
 }
 .programs__wrapper{
   width: 708px;
@@ -91,7 +104,7 @@
 .programs__item{
   display: block;
   width: 708px;
-  margin-left: -30px;
+  margin-left: -38px;
   padding-bottom: 40px;
 }
 .programs__title{
@@ -164,7 +177,8 @@
   .programs__list{
     width: 1220px;
     display: flex;
-    margin-top: 206px;
+    margin-top: 156px;
+    margin-left: 9px;
   }
   .programs__item{
     width: 570px;

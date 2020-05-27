@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: 320px 305px;
   background-color: @white;
+  margin-top: 1px;
 }
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
 .nutrition{
@@ -51,6 +52,15 @@
   padding-left: 72px;
   margin-top: 3px;
 }
+.nutrition__program-button{
+  &:hover{
+     background-color: @grass;
+   }
+   &:focus{
+     background-color: @grass;
+     color: rgba(255, 255, 255, 0.3);
+   }
+}
 .nutrition__can-image{
   display: block;
   width: 280px;
@@ -68,38 +78,42 @@
   padding-left: 29px;
   padding-right: 31px;
 }
-  .nutrition__header{
+.nutrition__header{
   width: 414px;
   .font-style(60px; 60px; left; @black);
-  padding-top: 49px;
+  padding-top: 40px;
   margin: 0 auto;
   padding-left: 88px;
   padding-right: 207px;
-  }
-  .nutrition__slogan{
+}
+.nutrition__slogan{
   width: 283px;
   .font-style(20px; 20px; left; @black);
   margin: 0 auto;
   padding-left: 89px;
   padding-top: 42px;
   padding-right: 337px;
-  }
-  .nutrition__can-image{
+}
+.nutrition__can-image{
   width: 709px;
   margin: 0 auto;
-  padding-top: 20px;
-  }
-  .nutrition__program-button--top{
+  margin-top: -9px;
+}
+.nutrition__program-button--top{
   display: block;
    width: 191px;
    .font-style(20px; 20px; left; @white);
+   text-transform: uppercase;
    margin: 0 auto;
-   padding-top: 17px;
-   padding-bottom: 15px;
-   padding-left: 26px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   padding-left: 25px;
    padding-right: 29px;
    background-color: @leaf;
-  }
+   margin-left: 90px;
+   margin-top: 47px;
+   position: absolute;
+}
 .nutrition__program-button--bottom{
   display: none;
 }
@@ -128,22 +142,26 @@
     padding-top: 222px;
   }
   .nutrition__can-image{
-    width: 552px;
     padding-top: 142px;
     margin: 0 auto;
+    margin-left: -120px;
+  }
+  .nutrition__picture{
+    width: 552px;
   }
   .nutrition__slogan{
     width: 283px;
-    padding-left: 80px;
+    padding-left: 81px;
     padding-right: 207px;
   }
   .nutrition__program-button--top{
-   width: 190px;
+   width: 191px;
    .font-style(20px; 20px; left; @white);
-   margin: 0 auto;
-   padding-top: 17px;
-   padding-bottom: 15px;
+   padding-top: 16px;
+   padding-bottom: 16px;
    padding-left: 26px;
-   padding-right: 29px;
+   padding-right: 28px;
+   margin-top: 52px;
+   margin-left: 80px;
   }
 }
