@@ -18,18 +18,74 @@
 }
 .social__link--vkontakte{
   .absolute-style(url(../img/icon-vk.svg); absolute; 22px; 12px; 25px; 0px);
+
+    &:hover{
+      content: url(../img/vk-green-copy.png);
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/vk-green-copy@2x.png);
+   }
+    }
+    &:active{
+      content: url(../img/vk-green-copy.png);
+      opacity: 0.3;
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/vk-green-copy@2x.png);
+   }
+    }
   }
 .social__link--instagram{
   .absolute-style(url(../img/icon-insta.svg); absolute; 16px; 16px; 24px; 22px);
+  &:hover{
+      content: url(../img/insta-green-copy.png);
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/insta-green-copy@2x.png);
+   }
+    }
+    &:active{
+      content: url(../img/insta-green-copy.png);
+      opacity: 0.3;
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/insta-green-copy@2x.png);
+   }
+    }
 }
 .social__link--facebook{
   .absolute-style(url(../img/icon-fb.svg); absolute; 10px; 19px; 22px; 41px);
+  &:hover{
+      content: url(../img/fb-green-copy.png);
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/fb-green-copy@2x.png);
+   }
+    }
+    &:active{
+      content: url(../img/fb-green-copy.png);
+      opacity: 0.3;
+       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/fb-green-copy@2x.png);
+   }
+    }
 }
+.social__link--vkontakte svg,
+.social__link--instagram svg,
+.social__link--facebook svg{
+  fill: @brownish-grey;
+}
+.social__link--vkontakte:hover svg,
+.social__link--instagram:hover svg,
+.social__link--facebook:hover svg{
+  fill: @leaf;
+}
+.social__link--vkontakte:active svg,
+.social__link--instagram:active svg,
+.social__link--facebook:active svg{
+  fill: @leaf;
+  opacity: 0.3;
+}
+
 .social__catalog .social__list{
   padding-left: 72px;
   margin-top: -1px;
 }
-
 @media (min-width: @tablet-width){
   .social{
    width: 324px;
